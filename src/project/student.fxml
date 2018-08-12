@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="695.0" prefWidth="1092.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <SubScene height="704.0" layoutX="-5.0" layoutY="-8.0" width="1108.0">
+        <root>
+          <Region />
+        </root>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#142e36" />
+               </light>
+            </Lighting>
+         </effect>
+      </SubScene>
+      <Label layoutX="53.0" layoutY="32.0" text="Name :" textFill="WHITE">
+         <font>
+            <Font name="Aharoni Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField layoutX="116.0" layoutY="35.0" prefHeight="25.0" prefWidth="213.0" />
+      <TextField layoutX="116.0" layoutY="77.0" prefHeight="25.0" prefWidth="213.0" />
+      <Label layoutX="69.0" layoutY="74.0" text="Age :" textFill="WHITE">
+         <font>
+            <Font name="Aharoni Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField layoutX="116.0" layoutY="222.0" prefHeight="25.0" prefWidth="213.0" />
+      <Label layoutX="37.0" layoutY="219.0" prefHeight="30.0" prefWidth="105.0" text="Address :" textFill="WHITE">
+         <font>
+            <Font name="Aharoni Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField layoutX="116.0" layoutY="122.0" prefHeight="25.0" prefWidth="213.0" />
+      <Label layoutX="68.0" layoutY="121.0" text="SSN :" textFill="WHITE">
+         <font>
+            <Font name="Aharoni Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField layoutX="116.0" layoutY="175.0" prefHeight="25.0" prefWidth="213.0" />
+      <Label layoutX="65.0" layoutY="173.0" text="code :" textFill="WHITE">
+         <font>
+            <Font name="Aharoni Bold" size="18.0" />
+         </font>
+      </Label>
+      <TableView layoutX="71.0" layoutY="316.0" prefHeight="256.0" prefWidth="950.0">
+        <columns>
+          <TableColumn minWidth="95.0" prefWidth="75.0" text="Code" />
+          <TableColumn minWidth="95.0" prefWidth="75.0" text="Name" />
+            <TableColumn minWidth="95.0" prefWidth="75.0" text="Age" />
+            <TableColumn minWidth="95.0" prefWidth="75.0" text="SSN" />
+            <TableColumn minWidth="95.0" prefWidth="75.0" text="Address" />
+            <TableColumn minWidth="95.0" prefWidth="75.0" text="Gender" />
+            <TableColumn minWidth="95.0" prefWidth="75.0" text="Nationalty" />
+            <TableColumn minWidth="95.0" prefWidth="75.0" text="Phone" />
+            <TableColumn minWidth="95.0" prefWidth="75.0" text="Stage" />
+            <TableColumn minWidth="83.0" prefWidth="94.0" text="Department" />
+        </columns>
+      </TableView>
+      <ImageView fitHeight="221.0" fitWidth="200.0" layoutX="434.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Logo/Logo2.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="737.0" layoutY="173.0" text="Stage :" textFill="WHITE">
+         <font>
+            <Font name="Aharoni Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="729.0" layoutY="121.0" text="phone :" textFill="WHITE">
+         <font>
+            <Font name="Aharoni Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField layoutX="805.0" layoutY="122.0" prefHeight="25.0" prefWidth="213.0" promptText="+20 " />
+      <Label layoutX="685.0" layoutY="219.0" prefHeight="30.0" prefWidth="114.0" text="Department :" textFill="WHITE">
+         <font>
+            <Font name="Aharoni Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="705.0" layoutY="76.0" text="Nationalty :" textFill="WHITE">
+         <font>
+            <Font name="Aharoni Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField layoutX="805.0" layoutY="77.0" prefHeight="25.0" prefWidth="213.0" />
+      <Label layoutX="733.0" layoutY="34.0" text="Gende :" textFill="WHITE">
+         <font>
+            <Font name="Aharoni Bold" size="18.0" />
+         </font>
+      </Label>
+      <ComboBox layoutX="805.0" layoutY="35.0" prefHeight="25.0" prefWidth="213.0" visibleRowCount="1" />
+      <ComboBox layoutX="805.0" layoutY="175.0" prefHeight="25.0" prefWidth="213.0" visibleRowCount="1" />
+      <Label layoutX="512.0" layoutY="120.0" prefHeight="30.0" prefWidth="69.0" text="Notes :" textFill="WHITE">
+         <font>
+            <Font name="Aharoni Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextArea layoutX="399.0" layoutY="150.0" prefHeight="73.0" prefWidth="294.0" />
+      <RadioButton layoutX="662.0" layoutY="279.0" mnemonicParsing="false" text="Code" textFill="WHITE" />
+      <RadioButton layoutX="725.0" layoutY="279.0" mnemonicParsing="false" text="Name" textFill="WHITE" />
+      <TextField layoutX="428.0" layoutY="275.0" prefHeight="25.0" prefWidth="213.0" promptText="search" />
+      <ComboBox layoutX="805.0" layoutY="222.0" prefHeight="25.0" prefWidth="213.0" visibleRowCount="1" />
+      <Button fx:id="osa" layoutX="73.0" layoutY="642.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="130.0" style="-fx-border-color: white; -fx-border-radius: 5px;" stylesheets="@style.css" text="Add" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <effect>
+            <InnerShadow choke="0.23" />
+         </effect>
+      </Button>
+      <Button fx:id="osa" layoutX="342.0" layoutY="642.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="130.0" style="-fx-border-color: white; -fx-border-radius: 5px;" stylesheets="@style.css" text="Delete" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <effect>
+            <InnerShadow choke="0.23" />
+         </effect>
+      </Button>
+      <Button fx:id="osa" layoutX="611.0" layoutY="642.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="130.0" style="-fx-border-color: white; -fx-border-radius: 5px;" stylesheets="@style.css" text="Update" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <effect>
+            <InnerShadow choke="0.23" />
+         </effect>
+      </Button>
+      <Button fx:id="osa" layoutX="890.0" layoutY="642.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="130.0" style="-fx-border-color: white; -fx-border-radius: 5px;" stylesheets="@style.css" text="Reset" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <effect>
+            <InnerShadow choke="0.23" />
+         </effect>
+      </Button>
+      <Label layoutX="354.0" layoutY="270.0" prefHeight="35.0" prefWidth="69.0" text="Search:" textFill="#f2f2f2">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

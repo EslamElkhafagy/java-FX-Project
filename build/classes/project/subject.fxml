@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="695.0" maxWidth="1102.0" minHeight="695.0" minWidth="1102.0" prefHeight="695.0" prefWidth="1102.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.controller">
+   <children>
+      <SubScene height="695.0" style="-fx-background-color: #16576b;" width="1102.0">
+        <root>
+          <Region />
+        </root>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#142e36" />
+               </light>
+            </Lighting>
+         </effect>
+      </SubScene>
+      <Label layoutX="70.0" layoutY="68.0" prefHeight="35.0" prefWidth="62.0" text="Name:" textFill="#f2f2f2">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField layoutX="132.0" layoutY="73.0" prefHeight="25.0" prefWidth="213.0" promptText="Subject Name" />
+      <TextField layoutX="132.0" layoutY="146.0" prefHeight="25.0" prefWidth="213.0" promptText="Subject Code" />
+      <Label layoutX="77.0" layoutY="141.0" prefHeight="35.0" prefWidth="62.0" text="Code:" textFill="#f2f2f2">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="200.0" fitWidth="241.0" layoutX="414.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Logo/educational_people_logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="680.0" layoutY="68.0" prefHeight="35.0" prefWidth="91.0" text="Doctor ID:" textFill="#f2f2f2">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ComboBox layoutX="778.0" layoutY="73.0" prefHeight="25.0" prefWidth="213.0" />
+      <Label layoutX="690.0" layoutY="141.0" prefHeight="35.0" prefWidth="91.0" text="Stage ID:" textFill="#f2f2f2">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ComboBox layoutX="778.0" layoutY="146.0" prefHeight="25.0" prefWidth="213.0" />
+      <ComboBox layoutX="467.0" layoutY="219.0" prefHeight="25.0" prefWidth="213.0" />
+      <Label layoutX="369.0" layoutY="214.0" prefHeight="35.0" prefWidth="91.0" text="Depart ID:" textFill="#f2f2f2">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TableView layoutX="76.0" layoutY="336.0" prefHeight="256.0" prefWidth="950.0">
+        <columns>
+          <TableColumn prefWidth="172.0" text="Name" />
+          <TableColumn prefWidth="172.0" text="Code" />
+            <TableColumn prefWidth="172.0" text="Doctor ID" />
+            <TableColumn prefWidth="184.0" text="Stage ID" />
+            <TableColumn prefWidth="187.0" text="Depart ID" />
+        </columns>
+      </TableView>
+      <Button fx:id="osa" layoutX="75.0" layoutY="641.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="130.0" style="-fx-border-color: white; -fx-border-radius: 5px;" stylesheets="@style.css" text="Add" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <InnerShadow choke="0.23" height="23.97" radius="7.035" width="6.17" />
+         </effect></Button>
+      <Button fx:id="osa" layoutX="350.0" layoutY="641.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="130.0" style="-fx-border-color: white; -fx-border-radius: 5px;" stylesheets="@style.css" text="Delete" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <InnerShadow choke="0.23" height="23.97" radius="7.035" width="6.17" />
+         </effect></Button>
+      <Button fx:id="osa" layoutX="636.0" layoutY="641.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="130.0" style="-fx-border-color: white; -fx-border-radius: 5px;" stylesheets="@style.css" text="Update" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <InnerShadow choke="0.23" height="23.97" radius="7.035" width="6.17" />
+         </effect></Button>
+      <Button fx:id="osa" layoutX="897.0" layoutY="641.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="130.0" style="-fx-border-color: white; -fx-border-radius: 5px;" stylesheets="@style.css" text="Reset" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <InnerShadow choke="0.23" height="23.97" radius="7.035" width="6.17" />
+         </effect></Button>
+      <Label layoutX="337.0" layoutY="285.0" prefHeight="35.0" prefWidth="69.0" text="Search:" textFill="#f2f2f2">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField layoutX="407.0" layoutY="290.0" prefHeight="25.0" prefWidth="213.0" />
+      <RadioButton layoutX="632.0" layoutY="290.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="68.0" text="Code" textFill="WHITE">
+         <toggleGroup>
+            <ToggleGroup fx:id="subject_search" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton layoutX="691.0" layoutY="294.0" mnemonicParsing="false" text="Name" textFill="WHITE" toggleGroup="$subject_search" />
+   </children>
+</AnchorPane>

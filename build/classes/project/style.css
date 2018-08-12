@@ -1,0 +1,10 @@
+#osa{
+/* -fx-min-width:130px;
+ -fx-min-height:35px;*/
+ -fx-background-color:#227690;
+ -fx-cursor:hand;
+
+}
+#osa:hover{
+ -fx-background-color:#134d5d;
+}

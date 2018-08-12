@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1102.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.Pane1Controller">
+    <stylesheets>
+        <URL value="@pane1.css" />
+    </stylesheets>
+   <children>
+      <SubScene height="700.0" width="1102.0">
+        <root>
+          <Region />
+        </root>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#142e36" />
+               </light>
+            </Lighting>
+         </effect>
+      </SubScene>
+      <Label layoutX="78.0" layoutY="68.0" text="Department name :" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label layoutX="723.0" layoutY="145.0" text="Code :" textFill="WHITE">
+         <font>
+            <Font name="Consolas" size="20.0" />
+         </font></Label>
+      <Label layoutX="124.0" layoutY="141.0" text="Doctor Name :" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ComboBox layoutX="258.0" layoutY="144.0" prefHeight="25.0" prefWidth="213.0" />
+      <TextField layoutX="256.0" layoutY="71.0" prefHeight="25.0" prefWidth="213.0" />
+      <TextField layoutX="802.0" layoutY="144.0" prefHeight="25.0" prefWidth="213.0" />
+      <TableView layoutX="76.0" layoutY="316.0" prefHeight="256.0" prefWidth="950.0">
+        <columns>
+          <TableColumn prefWidth="270.0" text="Department Name" />
+          <TableColumn prefWidth="328.0" text="Doctor Name" />
+            <TableColumn prefWidth="243.0" text="Code" />
+        </columns>
+      </TableView>
+      <Button fx:id="osa" layoutX="76.0" layoutY="638.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="130.0" style="-fx-border-color: white; -fx-border-radius: 5px;" stylesheets="@style.css" text="Add" textFill="WHITE">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <font>
+            <Font size="17.0" />
+         </font>
+         <effect>
+            <InnerShadow choke="0.24" />
+         </effect></Button>
+      <Button fx:id="osa" layoutX="339.0" layoutY="638.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="130.0" style="-fx-border-color: white; -fx-border-radius: 5px;" stylesheets="@style.css" text="Update" textFill="WHITE">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <font>
+            <Font size="17.0" />
+         </font>
+         <effect>
+            <InnerShadow choke="0.24" />
+         </effect>
+      </Button>
+      <Button fx:id="osa" layoutX="620.0" layoutY="638.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="130.0" style="-fx-border-color: white; -fx-border-radius: 5px;" stylesheets="@style.css" text="Delete" textFill="WHITE">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <font>
+            <Font size="17.0" />
+         </font>
+         <effect>
+            <InnerShadow choke="0.24" />
+         </effect>
+      </Button>
+      <Button fx:id="osa" layoutX="896.0" layoutY="638.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="130.0" style="-fx-border-color: white; -fx-border-radius: 5px;" stylesheets="@style.css" text="Reset" textFill="WHITE">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <font>
+            <Font size="17.0" />
+         </font>
+         <effect>
+            <InnerShadow choke="0.24" />
+         </effect>
+      </Button>
+      <Label layoutX="376.0" layoutY="245.0" text="Search : " textFill="WHITE">
+         <font>
+            <Font name="Consolas Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField layoutX="472.0" layoutY="244.0" prefHeight="25.0" prefWidth="213.0" />
+      <RadioButton layoutX="762.0" layoutY="247.0" mnemonicParsing="false" text="Name" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="dep_search" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton layoutX="696.0" layoutY="247.0" mnemonicParsing="false" text="Code" textFill="WHITE" toggleGroup="$dep_search">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </RadioButton>
+      <ImageView fitHeight="148.0" fitWidth="156.0" layoutX="831.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Logo/vector_education_circle_logo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

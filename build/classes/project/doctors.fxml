@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="706.0" prefWidth="1102.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.DoctorsController">
+    <stylesheets>
+        <URL value="@doctors.css" />
+    </stylesheets>
+   <children>
+      <SubScene fill="#e6e7e8" height="706.0" width="1102.0">
+        <root>
+          <Region />
+        </root>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#142e36" />
+               </light>
+            </Lighting>
+         </effect>
+      </SubScene>
+      <Label layoutX="14.0" layoutY="41.0" prefHeight="33.0" prefWidth="132.0" text="           Name:" textAlignment="CENTER" textFill="#eeeeee">
+         <font>
+            <Font name="Aparajita Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="28.0" layoutY="89.0" prefHeight="33.0" prefWidth="132.0" text="         Code:" textAlignment="CENTER" textFill="#eeeeee">
+         <font>
+            <Font name="Aparajita Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="28.0" layoutY="141.0" prefHeight="33.0" prefWidth="132.0" text="           SSN" textAlignment="CENTER" textFill="#eeeeee">
+         <font>
+            <Font name="Aparajita Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="194.0" prefHeight="33.0" prefWidth="132.0" text="           Phone:" textAlignment="CENTER" textFill="#eeeeee">
+         <font>
+            <Font name="Aparajita Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField layoutX="139.0" layoutY="45.0" prefHeight="25.0" prefWidth="213.0" />
+      <TextField layoutX="139.0" layoutY="93.0" prefHeight="25.0" prefWidth="213.0" />
+      <TextField layoutX="139.0" layoutY="145.0" prefHeight="25.0" prefWidth="213.0" />
+      <TextField layoutX="139.0" layoutY="198.0" prefHeight="25.0" prefWidth="213.0" />
+      <ImageView fitHeight="150.0" fitWidth="116.0" layoutX="502.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Logo/Lecturer-Logo.png" />
+         </image>
+      </ImageView>
+      <TextField layoutX="815.0" layoutY="198.0" prefHeight="25.0" prefWidth="213.0" />
+      <TextField layoutX="815.0" layoutY="93.0" prefHeight="25.0" prefWidth="213.0" />
+      <TextField layoutX="815.0" layoutY="48.0" prefHeight="25.0" prefWidth="213.0" />
+      <Label layoutX="725.0" layoutY="194.0" prefHeight="33.0" prefWidth="90.0" text="Address :" textAlignment="CENTER" textFill="#eeeeee">
+         <font>
+            <Font name="Aparajita Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="730.0" layoutY="141.0" prefHeight="33.0" prefWidth="80.0" text="Gender :" textAlignment="CENTER" textFill="#eeeeee">
+         <font>
+            <Font name="Aparajita Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="697.0" layoutY="89.0" prefHeight="33.0" prefWidth="116.0" text=" Nationalty :" textAlignment="CENTER" textFill="#eeeeee">
+         <font>
+            <Font name="Aparajita Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="689.0" layoutY="44.0" prefHeight="33.0" prefWidth="132.0" text="           Email :" textAlignment="CENTER" textFill="#eeeeee">
+         <font>
+            <Font name="Aparajita Bold" size="20.0" />
+         </font>
+      </Label>
+      <ComboBox layoutX="815.0" layoutY="145.0" prefHeight="25.0" prefWidth="213.0" />
+      <TableView layoutX="81.0" layoutY="322.0" prefHeight="256.0" prefWidth="950.0">
+        <columns>
+          <TableColumn prefWidth="165.0" text="Name" />
+          <TableColumn minWidth="0.0" prefWidth="131.0" text="Code" />
+            <TableColumn prefWidth="138.0" text="SSN" />
+            <TableColumn prefWidth="132.0" text="Phone" />
+            <TableColumn prefWidth="109.0" text="Email" />
+            <TableColumn prefWidth="90.0" text="Nationalty" />
+            <TableColumn prefWidth="87.0" text="Gender" />
+            <TableColumn prefWidth="110.0" text="Address" />
+        </columns>
+      </TableView>
+      <Label layoutX="352.0" layoutY="261.0" prefHeight="33.0" prefWidth="80.0" text="Search :" textAlignment="CENTER" textFill="#eeeeee">
+         <font>
+            <Font name="Aparajita Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField layoutX="438.0" layoutY="265.0" prefHeight="25.0" prefWidth="213.0" />
+      <RadioButton layoutX="665.0" layoutY="265.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="68.0" text="Code" textFill="WHITE">
+         <toggleGroup>
+            <ToggleGroup fx:id="doctor_search" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton layoutX="733.0" layoutY="265.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="68.0" text="Name" textFill="WHITE" toggleGroup="$doctor_search" />
+      <Button fx:id="osa" alignment="CENTER" layoutX="81.0" layoutY="652.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="130.0" style="-fx-border-color: white; -fx-border-radius: 5px;" stylesheets="@style.css" text="Add" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <effect>
+            <InnerShadow choke="0.21" />
+         </effect></Button>
+      <Button fx:id="osa" alignment="CENTER" layoutX="352.0" layoutY="652.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="130.0" style="-fx-border-color: white; -fx-border-radius: 5px;" stylesheets="@style.css" text="Delete" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <effect>
+            <InnerShadow choke="0.21" />
+         </effect></Button>
+      <Button fx:id="osa" alignment="CENTER" layoutX="646.0" layoutY="652.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="130.0" style="-fx-border-color: white; -fx-border-radius: 5px;" stylesheets="@style.css" text="Update" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <effect>
+            <InnerShadow choke="0.21" />
+         </effect></Button>
+      <Button fx:id="osa" alignment="CENTER" layoutX="901.0" layoutY="652.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="130.0" style="-fx-border-color: white; -fx-border-radius: 5px;" stylesheets="@style.css" text="Reset" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <effect>
+            <InnerShadow choke="0.21" />
+         </effect></Button>
+   </children>
+</AnchorPane>

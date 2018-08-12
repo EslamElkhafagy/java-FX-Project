@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="695.0" maxWidth="1102.0" minHeight="695.0" minWidth="1102.0" prefHeight="695.0" prefWidth="1102.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.controller">
+   <children>
+      <SubScene height="695.0" width="1102.0">
+        <root>
+          <Region />
+        </root>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#142e36" />
+               </light>
+            </Lighting>
+         </effect>
+      </SubScene>
+      <Label layoutX="48.0" layoutY="100.0" prefHeight="35.0" prefWidth="62.0" text="Name:" textFill="#f2f2f2">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField layoutX="110.0" layoutY="105.0" prefHeight="15.0" prefWidth="257.0" promptText="Subject Name" />
+      <TextField layoutX="110.0" layoutY="166.0" prefHeight="15.0" prefWidth="257.0" promptText="Subject Code" />
+      <Label layoutX="48.0" layoutY="161.0" prefHeight="35.0" prefWidth="62.0" text="Code:" textFill="#f2f2f2">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="165.0" fitWidth="203.0" layoutX="413.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Logo/educational_people_logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="637.0" layoutY="100.0" prefHeight="35.0" prefWidth="91.0" text="Doctor ID:" textFill="#f2f2f2">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ComboBox layoutX="739.0" layoutY="105.0" prefHeight="25.0" prefWidth="257.0" />
+      <Label layoutX="646.0" layoutY="161.0" prefHeight="35.0" prefWidth="91.0" text="Stage ID:" textFill="#f2f2f2">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ComboBox layoutX="739.0" layoutY="166.0" prefHeight="25.0" prefWidth="257.0" />
+      <ComboBox layoutX="435.0" layoutY="239.0" prefHeight="25.0" prefWidth="257.0" />
+      <Label layoutX="342.0" layoutY="234.0" prefHeight="35.0" prefWidth="91.0" text="Depart ID:" textFill="#f2f2f2">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TableView layoutX="107.0" layoutY="378.0" prefHeight="200.0" prefWidth="888.0">
+        <columns>
+          <TableColumn prefWidth="172.0" text="Name" />
+          <TableColumn prefWidth="172.0" text="Code" />
+            <TableColumn prefWidth="172.0" text="Doctor ID" />
+            <TableColumn prefWidth="184.0" text="Stage ID" />
+            <TableColumn prefWidth="187.0" text="Depart ID" />
+        </columns>
+      </TableView>
+      <Button layoutX="110.0" layoutY="601.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="104.0" text="Add" />
+      <Button layoutX="361.0" layoutY="601.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="104.0" text="Delete" />
+      <Button layoutX="616.0" layoutY="601.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="104.0" text="Update" />
+      <Button layoutX="892.0" layoutY="601.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="104.0" text="Reset" />
+      <Label layoutX="299.0" layoutY="313.0" prefHeight="35.0" prefWidth="69.0" text="Search:" textFill="#f2f2f2">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField layoutX="368.0" layoutY="318.0" prefHeight="15.0" prefWidth="257.0" />
+      <RadioButton layoutX="651.0" layoutY="313.0" mnemonicParsing="false" text="Code" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="subject_search" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton layoutX="746.0" layoutY="313.0" mnemonicParsing="false" text="Name" textFill="WHITE" toggleGroup="$subject_search">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </RadioButton>
+   </children>
+</AnchorPane>
